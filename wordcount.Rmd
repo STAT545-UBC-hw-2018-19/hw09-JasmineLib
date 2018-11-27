@@ -1,0 +1,65 @@
+---
+title: "wordcount"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(tidyverse)
+words <- readLines("words.txt")
+
+test = c("hello, you are a silly person", "the big red fox jumped over the lazy dog quickly and said hi", "no")
+
+lettercount = words %>%
+	tolower() %>% 
+	strsplit("") %>% 
+	c(recursive= TRUE) %>% 
+	table() %>% 
+	enframe(name = "letter", value = "count")
+
+lettercount 
+
+lettercount %>% 
+ggplot + 
+	aes()
+("letter", "count")
+
+```
+
+
+
+```{r}
+	table(unlist(strsplit(tolower(words), ""), use.names=FALSE), levels=letters)
+
+
+str(lettercount_table)
+
+
+lettercount_df = data.frame("letter" = letters, "lettercount" = factor(unlist(strsplit(words, ""), use.names=FALSE), levels=letters))
+lettercount_df
+
+lettercount_table %>% 
+	ggplot() + 
+	geom_histogram(lettercount_table)
+
+
+#num_letters <- for (letter in letters) {
+#	length(grep(letter, words))
+#}
+
+#num_letters <- for (i in letters) {
+#	print (length(grep(i, test)))
+#}
+
+#lettercount_df <- data.frame("letter" = letters, "count" = num_letters, stringsAsFactors = FALSE)
+
+#hist_words <- table(num_letters)
+#write.table(hist_words, "histogram.tsv",
+			#			sep = "\t", row.names = rowname_hist , quote = FALSE)
+```
+
+
+
+
+

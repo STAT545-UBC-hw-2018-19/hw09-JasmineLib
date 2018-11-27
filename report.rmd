@@ -20,3 +20,7 @@ The most frequent word length is `r with(hist_dat, Length[which.max(Freq)])`.
 Here is a histogram of word lengths.
 
 ![*Fig. 1* A histogram of English word lengths](histogram.png)
+
+
+Here is a bar chart showing letter use totals in words.
+![*Fig. 2* A Bar Chart of Letter Use](lettercount.png)
