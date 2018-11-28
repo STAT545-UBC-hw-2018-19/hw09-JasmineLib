@@ -2,7 +2,7 @@ Homework 9 make-activity Jasmine Lib
 =============
 
 
-This repository was initially cloned from [this repository](https://github.com/STAT545-UBC/make-activity) from Jenny Brian, as was updated to meet the requirements of STAT 547 hw09.
+This repository was initially cloned from [this repository](https://github.com/STAT545-UBC/make-activity) from Jenny Brian, and was updated to meet the requirements of STAT 547 hw09.
 
 I made the following changes/additions to the pipeline:
  
