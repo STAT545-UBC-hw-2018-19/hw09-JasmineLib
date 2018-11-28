@@ -8,10 +8,11 @@ clean:
 
 report.html: report.rmd histogram.png lettercount.png
 	Rscript -e 'rmarkdown::render("$<")'
-
+	
 lettercount_analysis.html: lettercount_analysis.rmd lettercount.png
 	Rscript -e 'rmarkdown::render("$<")'
 
+#Uses Rscript to make a histogram plot of word length.
 histogram.png: histogram.tsv
 	Rscript -e 'library(ggplot2); \
 	qplot(Length, Freq, data=read.delim("$<"), colour = I("red")) +\
@@ -20,6 +21,7 @@ histogram.png: histogram.tsv
 	ggsave("$@")'
 	rm Rplots.pdf
 
+#Use Rscript to make a bar plot of letter frequency
 lettercount.png: lettercount.tsv
 	Rscript -e 'library(tidyverse);\
 	ggplot(data = read.delim("$<"), \
