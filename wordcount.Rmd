@@ -16,15 +16,26 @@ lettercount = words %>%
 	strsplit("") %>% 
 	c(recursive= TRUE) %>% 
 	table() %>% 
-	enframe(name = "letter", value = "count")
+	enframe(name = "letter", value = "lettercount")
 
 lettercount 
 
-lettercount %>% 
-ggplot + 
-	aes()
-("letter", "count")
 
+lettercount %>% 
+	ggplot+
+	aes(letter, lettercount)+ 
+	geom_bar(stat = "identity", fill = "red", colour = "black")+
+	theme_bw()
+
+
+ggplot(data = lettercount, aes(letter, lettercount)+ geom_bar(stat = "identity", fill = "red", colour = "black"), theme_bw())
+	aes(letter, lettercount)+ 
+	geom_bar(stat = "identity")+
+	theme_bw()
+
+
+
+ggplot(data = read.delim("lettercount.tsv"), aes(letter, lettercount)) + geom_bar(stat = "identity", fill = "red")
 ```
 
 

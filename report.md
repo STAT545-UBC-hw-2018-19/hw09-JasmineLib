@@ -1,6 +1,6 @@
 ---
-title: "English Word lengths"
-author: "Jenny Bryan"
+title: "English Word lengths and Letter Frequency"
+author: "Jenny Bryan, Jasmine Lib"
 date: "27 November, 2018"
 output:
   html_document:
@@ -20,5 +20,13 @@ Here is a histogram of word lengths.
 ![*Fig. 1* A histogram of English word lengths](histogram.png)
 
 
-Here is a bar chart showing letter use totals in words.
+
+
+
+
+In the second part of this assignment, I computed the total frequency of each letter in the file 'words'.
+
+Here is a bar chart showing letter frequency totals in all words in the file 'words'.
+
+
 ![*Fig. 2* A Bar Chart of Letter Use](lettercount.png)
