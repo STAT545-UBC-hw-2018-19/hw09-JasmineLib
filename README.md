@@ -6,9 +6,9 @@ This repository was initially cloned from [this repository](https://github.com/S
 
 I made the following changes/additions to the pipeline:
  
-Important files:
-[Makefile](https://github.com/STAT545-UBC-students/hw09-JasmineLib/blob/master/Makefile)
-[md File](https://github.com/STAT545-UBC-students/hw09-JasmineLib/blob/master/lettercount_analysis.md) (lettercount analysis only, phony output)
+Important files:  
+[Makefile](https://github.com/STAT545-UBC-students/hw09-JasmineLib/blob/master/Makefile)  
+[md File](https://github.com/STAT545-UBC-students/hw09-JasmineLib/blob/master/lettercount_analysis.md) (lettercount analysis only, phony output)  
 [md File](https://github.com/STAT545-UBC-students/hw09-JasmineLib/blob/master/report.md) (total output)
  
 Added an additional analysis of 'words':  
